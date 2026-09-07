@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+
+  --color-bg: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-border: #e1e4e9;
+  --color-text: #12161c;
+  --color-text-mute: #5b6472;
+  --color-text-faint: #9aa3af;
+  --color-accent: #2f5fd9;
+  --color-accent-soft: #e8edfb;
+  --color-warm: #b3591f;
+  --color-warm-soft: #fbeee1;
+
+  --color-casa: #dcfce7;
+  --color-casa-ink: #15803d;
+  --color-trabalho: #dbeafe;
+  --color-trabalho-ink: #1d4ed8;
+  --color-pessoal: #f3e8ff;
+  --color-pessoal-ink: #7e22ce;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-bg: #10131a;
+    --color-surface: #181c24;
+    --color-border: #2b303a;
+    --color-text: #e7e9ec;
+    --color-text-mute: #9aa3af;
+    --color-text-faint: #6b7280;
+    --color-accent: #7c9bff;
+    --color-accent-soft: #1e2740;
+    --color-warm: #e39a5e;
+    --color-warm-soft: #332419;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}

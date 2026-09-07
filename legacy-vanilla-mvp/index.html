@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vida Extraordinária</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="shell">
+  <aside id="sidebar">
+    <div class="brand">Vida Extraordinária</div>
+    <nav id="sidebar-nav"></nav>
+  </aside>
+
+  <main id="content" role="main"></main>
+
+  <nav id="tabbar"></nav>
+</div>
+
+<button id="fab" class="fab" aria-label="Capturar" title="Capturar">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+</button>
+
+<div id="capture-overlay" class="overlay" hidden>
+  <div class="capture-modal">
+    <div class="capture-title">Capturar</div>
+    <textarea id="capture-input" placeholder="Digite sua ideia... (ex. falar com a dona do apto sobre a janela)" rows="3"></textarea>
+    <div class="capture-actions">
+      <button id="capture-cancel" class="btn-ghost">Cancelar</button>
+      <button id="capture-save" class="btn-primary">Salvar na Inbox</button>
+    </div>
+  </div>
+</div>
+
+<div id="mais-overlay" class="overlay" hidden>
+  <div class="mais-sheet">
+    <button class="mais-item" data-route="areas">
+      <span class="mais-icon" data-icon="areas"></span> Áreas
+    </button>
+    <button class="mais-item" data-route="vida">
+      <span class="mais-icon" data-icon="vida"></span> Minha Vida Extraordinária
+    </button>
+    <button id="mais-close" class="btn-ghost" style="margin-top:8px;">Fechar</button>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/screens/hoje.js"></script>
+<script src="js/screens/placeholder.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
